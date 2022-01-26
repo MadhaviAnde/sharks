@@ -10,7 +10,7 @@ pipeline {
       
        steps {
                  
-                git branch: 'main', credentialsId: 'gitaccid', url: 'https://github.com/MadhaviAnde/sharks.git'
+                git branch: 'main', credentialsId: 'git-hub-id', url: 'https://github.com/MadhaviAnde/sharks.git'
                
             }
             
