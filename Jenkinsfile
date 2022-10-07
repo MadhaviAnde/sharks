@@ -28,7 +28,17 @@ pipeline {
             }
         }
       
-       
+        stage(' image') {
+            steps {
+                
+                script {
+
+                    
+                    dockerImage = docker.build("sample:$env.BUILD_ID")
+                }
+            }
+        }
+      
             
             
         
